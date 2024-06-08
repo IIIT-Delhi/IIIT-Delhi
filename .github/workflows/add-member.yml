@@ -1,0 +1,27 @@
+name: Add New Member
+on:
+  pull_request:
+    types: [opened]
+  issues:
+    types: [opened]
+
+jobs:
+  add_member:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR or Issue is for adding a member
+        id: check_member
+        run: |
+          if [[ "${{ github.event.pull_request.title }}" == *"Add me to the organization"* || "${{ github.event.issue.title }}" == *"Add me to the organization"* ]]; then
+            echo "::set-output name=add_member::true"
+          else
+            echo "::set-output name=add_member::false"
+          fi
+
+      - name: Add Member to Organization
+        if: steps.check_member.outputs.add_member == 'true'
+        run: |
+          USERNAME=$(jq -r '.pull_request.user.login' $GITHUB_EVENT_PATH || jq -r '.issue.user.login' $GITHUB_EVENT_PATH)
+          curl -X PUT -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/orgs/${{ github.repository_owner }}/memberships/$USERNAME" \
+            -d '{"role":"member"}'
