@@ -19,6 +19,8 @@ Welcome! To join the IIIT-Delhi organization on GitHub, please follow these step
      IIIT Delhi Email: [vikranth22570@iiitd.ac.in](mailto:vikranth22570@iiitd.ac.in)
      ```
 
+Refer to [students/Vikranth3140.md](students/Vikranth3140.md) to see how to create your markdown file.
+
 Once we verify that you have completed these steps and confirmed your IIIT Delhi email address, we will add you as a member of the IIIT-Delhi organization.
 
 ---
