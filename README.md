@@ -9,14 +9,14 @@ Welcome! To join the IIIT-Delhi organization on GitHub, please follow these step
 3. **Follow the Organization**: Go to the [IIIT-Delhi organization page](https://github.com/IIIT-Delhi) and click the "Follow" button.
 
 4. **Submit a Pull Request or Issue**:
-   - **Pull Request**: Create a new file in the `students` directory named `your-username.txt` and add your GitHub username and IIIT Delhi email address inside the file. Then, submit a Pull Request with the title "Add me to the organization".
+   - **Pull Request**: Create a new file in the `students` directory named `your-username.md` and add your GitHub username and IIIT Delhi email address inside the file. Then, submit a Pull Request with the title "Add me to the organization".
    - **Issue**: Open an Issue with the title "Add me to the organization" and mention your GitHub username and IIIT Delhi email address in the Issue description.
 
 **Example**:
-   - PR: `students/Vikranth3140.txt`
-     ```
-     GitHub Username: Vikranth3140
-     IIIT Delhi Email: vikranth22570@iiitd.ac.in
+   - PR: `students/Vikranth3140.md`
+     ```markdown
+     GitHub Username: [Vikranth3140](https://github.com/Vikranth3140)
+     IIIT Delhi Email: [vikranth22570@iiitd.ac.in](mailto:vikranth22570@iiitd.ac.in)
      ```
 
 Once we verify that you have completed these steps and confirmed your IIIT Delhi email address, we will add you as a member of the IIIT-Delhi organization.
