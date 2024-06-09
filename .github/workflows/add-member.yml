@@ -12,45 +12,45 @@ jobs:
         id: check_member
         run: |
           if [[ "${{ github.event.issue.title }}" == *"Add me to the organization"* ]]; then
-            echo "::set-output name=add_member::true"
+            echo "add_member=true" >> $GITHUB_ENV
           else
-            echo "::set-output name=add_member::false"
+            echo "add_member=false" >> $GITHUB_ENV
           fi
 
       - name: Get Pull Request Author
         id: get_author
-        if: steps.check_member.outputs.add_member == 'true'
+        if: env.add_member == 'true'
         run: |
           PR_URL=$(curl -s -H "Authorization: token ${{ secrets.GITHUBTOKEN_ADDING_PPL }}" "https://api.github.com/repos/${{ github.repository_owner }}/${{ github.event.repository.name }}/pulls?state=open" | jq -r '.[0].user.login')
-          echo "::set-output name=pr_author::$PR_URL"
+          echo "pr_author=$PR_URL" >> $GITHUB_ENV
 
       - name: Verify Email from PR
         id: validate_email
-        if: steps.check_member.outputs.add_member == 'true'
+        if: env.add_member == 'true'
         run: |
-          EMAIL=$(curl -s -H "Authorization: token ${{ secrets.GITHUBTOKEN_ADDING_PPL }}" "https://raw.githubusercontent.com/${{ github.repository_owner }}/${{ github.event.repository.name }}/main/students.md" | grep -oP '(?<=IIIT Delhi Email: \[)[^\s]*(?=\])' | grep ${{ steps.get_author.outputs.pr_author }})
+          EMAIL=$(curl -s -H "Authorization: token ${{ secrets.GITHUBTOKEN_ADDING_PPL }}" "https://raw.githubusercontent.com/${{ github.repository_owner }}/${{ github.event.repository.name }}/main/students.md" | grep -oP '(?<=IIIT Delhi Email: \[)[^\s]*(?=\])' | grep ${{ env.pr_author }})
           if [[ $EMAIL == *@iiitd.ac.in ]]; then
-            echo "::set-output name=email_valid::true"
+            echo "email_valid=true" >> $GITHUB_ENV
           else
-            echo "::set-output name=email_valid::false"
+            echo "email_valid=false" >> $GITHUB_ENV
           fi
 
       - name: Add Member to Organization
-        if: steps.validate_email.outputs.email_valid == 'true'
+        if: env.email_valid == 'true'
         run: |
           curl -X PUT -H "Authorization: token ${{ secrets.GITHUBTOKEN_ADDING_PPL }}" \
-            "https://api.github.com/orgs/${{ github.repository_owner }}/memberships/${{ steps.get_author.outputs.pr_author }}" \
+            "https://api.github.com/orgs/${{ github.repository_owner }}/memberships/${{ env.pr_author }}" \
             -d '{"role":"member"}'
 
       - name: Comment on Issue
-        if: steps.validate_email.outputs.email_valid == 'true'
+        if: env.email_valid == 'true'
         run: |
           COMMENT="Congratulations! Your email has been verified, and you have been added to the organization."
           ISSUE_URL=$(jq -r '.issue.url' $GITHUB_EVENT_PATH)
           curl -X POST -H "Authorization: token ${{ secrets.GITHUBTOKEN_ADDING_PPL }}" -d "{\"body\": \"$COMMENT\"}" $ISSUE_URL/comments
 
       - name: Comment on Invalid Email
-        if: steps.validate_email.outputs.email_valid == 'false'
+        if: env.email_valid == 'false'
         run: |
           COMMENT="Invalid email address. Please use your IIIT Delhi email (ending with @iiitd.ac.in)."
           ISSUE_URL=$(jq -r '.issue.url' $GITHUB_EVENT_PATH)
