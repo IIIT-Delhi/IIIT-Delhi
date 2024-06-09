@@ -35,7 +35,7 @@ jobs:
         run: |
           EMAIL=$(curl -s -H "Authorization: token ${{ secrets.GITHUBTOKEN_ADDING_PPL }}" \
             "https://raw.githubusercontent.com/${{ github.repository_owner }}/${{ github.event.repository.name }}/main/students.md" | \
-            grep -oP "(?<=IIIT Delhi Email: \[)[^\]]*(?=\])" | grep "${{ env.pr_author }}")
+            grep -A 1 "GitHub Username: \[${{ env.pr_author }}\]" | grep -oP '(?<=IIIT Delhi Email: \[)[^\]]*')
           echo "Extracted Email: $EMAIL"
           if [[ $EMAIL == *@iiitd.ac.in ]]; then
             echo "email_valid=true" >> $GITHUB_ENV
