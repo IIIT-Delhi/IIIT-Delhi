@@ -28,7 +28,7 @@ jobs:
         id: validate_email
         if: env.add_member == 'true'
         run: |
-          EMAIL=$(curl -s -H "Authorization: token ${{ secrets.GITHUBTOKEN_ADDING_PPL }}" "https://raw.githubusercontent.com/${{ github.repository_owner }}/${{ github.event.repository.name }}/main/students.md" | grep -oP '(?<=IIIT Delhi Email: \[)[^\s]*(?=\])' | grep ${{ env.pr_author }})
+          EMAIL=$(curl -s -H "Authorization: token ${{ secrets.GITHUBTOKEN_ADDING_PPL }}" "https://raw.githubusercontent.com/${{ github.repository_owner }}/${{ github.event.repository.name }}/main/students.md" | grep -oP '(?<=IIIT Delhi Email: \[)[^\]]*' | grep ${{ env.pr_author }})
           if [[ $EMAIL == *@iiitd.ac.in ]]; then
             echo "email_valid=true" >> $GITHUB_ENV
           else
