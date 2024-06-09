@@ -6,4 +6,4 @@
 
 2. **GitHub Username**: [BYLD-IIITD-Admin](https://github.com/BYLD-IIITD-Admin)
     \
-    **IIIT Delhi Email**: [vikranth22570@iiitd.ac.in](mailto:vikranth22570@iiitd.ac.in)
+    **IIIT Delhi Email**: [byld@iiitd.ac.in](mailto:byld@iiitd.ac.in)
