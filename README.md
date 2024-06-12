@@ -1,8 +1,23 @@
 # Join IIIT-Delhi
 
+## Our Commitment
+
+We are committed to introducing, enhancing, and revitalizing the OSS (open source) culture at IIIT Delhi. As part of this commitment, we offer:
+
+- **Credits**
+- **Honorarium**
+- **Certificates**
+- **Swags/Merchandise**
+
+If you have an idea or project that you believe will benefit the institute, we encourage you to start an issue in [our GitHub Issues](https://github.com/IIIT-Delhi/IIIT-Delhi/issues) or send an email to [byld@iiitd.ac.in](mailto:byld@iiitd.ac.in).
+\
+We are eager to discuss your ideas and collaborate to bring them to fruition, offering incentives along the way.
+
 **Important**: Please ensure that you use your IIIT Delhi email address. Only entries with IIIT Delhi email addresses will be accepted.
 
-Welcome! To join the IIIT-Delhi organization on GitHub, please follow these steps:
+## How to Join
+
+To join the IIIT-Delhi organization on GitHub, please follow these steps:
 
 1. **Follow the Organization**:
    - Go to the [IIIT-Delhi organization](https://github.com/IIIT-Delhi) and click the "Follow" button.
@@ -30,23 +45,12 @@ Refer to the existing entries in the `students.md` file to see how to format you
 5. **Open an Issue**:
    - After submitting the Pull Request, open an Issue with the title "Add me to the organization" and mention your GitHub username.
 
+---
+
 Once we verify that you have completed these steps and confirmed your IIIT Delhi email address, we will add you as a member of the IIIT-Delhi organization.
 
 ---
 
 By joining, you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md) of the organization.
-
----
-
-## Our Commitment
-
-We are committed to introducing, enhancing, and revitalizing the OSS (open source) culture at IIIT Delhi. As part of this commitment, we offer:
-
-- **Credits**
-- **Honorarium**
-- **Certificates**
-- **Swags/Merchandise**
-
-If you have an idea or project that you believe will benefit the institute, we are more than happy to arrange a meeting to discuss it further.
 
 Thank you for your interest in joining IIIT-Delhi!
