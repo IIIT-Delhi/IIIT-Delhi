@@ -4,16 +4,16 @@
 
 Welcome! To join the IIIT-Delhi organization on GitHub, please follow these steps:
 
-1. **Follow the Organization**: 
+1. **Follow the Organization**:
    - Go to the [IIIT-Delhi organization](https://github.com/IIIT-Delhi) and click the "Follow" button.
 
-2. **Star this Repository**: 
+2. **Star this Repository**:
    - Click the "Star" button at the top right of this page.
 
-3. **Fork this Repository**: 
+3. **Fork this Repository**:
    - Click the "Fork" button at the top right of this page.
 
-4. **Submit a Pull Request**: 
+4. **Submit a Pull Request**:
    - Add your GitHub username and IIIT Delhi email address to the `students.md` file in the format shown below.
    - Submit a Pull Request with the title "Add me to the organization".
 
@@ -27,7 +27,7 @@ Welcome! To join the IIIT-Delhi organization on GitHub, please follow these step
 
 Refer to the existing entries in the `students.md` file to see how to format your entry.
 
-5. **Open an Issue**: 
+5. **Open an Issue**:
    - After submitting the Pull Request, open an Issue with the title "Add me to the organization" and mention your GitHub username.
 
 Once we verify that you have completed these steps and confirmed your IIIT Delhi email address, we will add you as a member of the IIIT-Delhi organization.
@@ -35,5 +35,18 @@ Once we verify that you have completed these steps and confirmed your IIIT Delhi
 ---
 
 By joining, you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md) of the organization.
+
+---
+
+## Our Commitment
+
+We are committed to introducing, enhancing, and revitalizing the OSS (open source) culture at IIIT Delhi. As part of this commitment, we offer:
+
+- **Credits**
+- **Honorarium**
+- **Certificates**
+- **Swags/Merchandise**
+
+If you have an idea or project that you believe will benefit the institute, we are more than happy to arrange a meeting to discuss it further.
 
 Thank you for your interest in joining IIIT-Delhi!
