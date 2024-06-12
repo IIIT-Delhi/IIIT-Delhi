@@ -1,4 +1,4 @@
-# Join IIIT-Delhi Organization
+# Join IIIT-Delhi
 
 Welcome! To join the IIIT-Delhi organization on GitHub, please follow these steps:
 
@@ -21,6 +21,8 @@ Welcome! To join the IIIT-Delhi organization on GitHub, please follow these step
 Refer to the existing entries in the `students.md` file to see how to format your entry.
 
 5. **Open an Issue**: After submitting the Pull Request, open an Issue with the title "Add me to the organization" and mention your GitHub username.
+
+**Important**: Please ensure that you use your IIIT Delhi email address. Only entries with IIIT Delhi email addresses will be accepted.
 
 Once we verify that you have completed these steps and confirmed your IIIT Delhi email address, we will add you as a member of the IIIT-Delhi organization.
 
