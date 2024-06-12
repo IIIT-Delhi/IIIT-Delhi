@@ -1,13 +1,13 @@
 # Join IIIT-Delhi
 
-## Our Commitment
+## Our Initiative
 
-We are committed to introducing, enhancing, and revitalizing the OSS (open source) culture at IIIT Delhi. As part of this commitment, we offer:
+We are dedicated to fostering, enhancing, and revitalizing the OSS (open source software) culture at IIIT Delhi. As part of this initiative, we offer:
 
-- **Credits**
-- **Honorarium**
-- **Certificates**
-- **Swags/Merchandise**
+- **Academic Credits**
+- **Honorariums**
+- **Certificates of Achievement**
+- **Exclusive Swag and Merchandise**
 
 If you have an idea or project that you believe will benefit the institute, we encourage you to start an issue in [our GitHub Issues](https://github.com/IIIT-Delhi/IIIT-Delhi/issues) or send an email to [byld@iiitd.ac.in](mailto:byld@iiitd.ac.in).
 \
