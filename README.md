@@ -44,6 +44,8 @@ Refer to the existing entries in the `students.md` file to see how to format you
 
 5. **Open an Issue**:
    - After submitting the Pull Request, open an Issue with the title "Add me to the organization" and mention your GitHub username.
+   - Use the issue template titled `Request to be added to the organization` and change your username and IIITD email address accordingly.
+   - Alternatively, you can use [this link](https://github.com/IIIT-Delhi/IIIT-Delhi/issues/new?assignees=Vikranth3140&labels=add+me&projects=&template=request-to-be-added-to-the-organization.md&title=Add+me+to+the+organization) to open an issue directly with the template.
 
 ---
 
